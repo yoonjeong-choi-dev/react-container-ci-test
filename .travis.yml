@@ -11,7 +11,7 @@ services:
 # 스크립트를 실행 할 수 있는 테스트 환경 구성
 before_install:
   - echo "start creating an image with Dockerfile"
-  - docker build -t yjchoi/docker-react-app -f Dockerfile.dev
+  - docker build -t yjchoi/docker-react-app -f Dockerfile.dev .
 
 # 테스트 실행 스크립트 : 리액트 테스트 스크립트
 script:
