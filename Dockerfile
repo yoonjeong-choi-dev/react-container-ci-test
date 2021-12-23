@@ -14,6 +14,8 @@ RUN npm run build
 
 # < 배포 단계 >
 FROM nginx
+
+# 외부에서 접근 가능하도록 nginx 기본 포트 번호 명시
 EXPOSE 80
 
 # 빌드 파일 복사
